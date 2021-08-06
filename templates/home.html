@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+
+<style>
+
+body{
+
+	background-color:AliceBlue;
+}
+
+h4 {
+	
+ 	color: darkblue;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+</style>
+</head>
+
+<body>
+
+	<header>
+		<h2>Spam Detector For Email</h2>
+	</header>
+
+	<div class="ml-container">
+		<form action="{{ url_for('predict')}}" method="POST">
+		<h4><b>Enter Your Email Here</b></h4>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="10" cols="100"></textarea>
+		<br/>
+
+		<input type="submit" value="Submit">
+	</form>
+		
+	</div>
+
+</body>
+</html>

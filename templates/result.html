@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>result</title>
+<style>
+
+body{
+
+	background-color:AliceBlue;
+}
+
+	
+h3 {
+	color:blue;
+	text-align: center;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h2>Spam Detector For Email</h2>
+		
+	</div>
+	</header>
+	<h3><b>Result</b></h3>
+	<div class="results">
+
+
+	{% if prediction == 1%}
+	<h2 style="color:red;text-align: center;">Spam</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:green;text-align: center;">Not a Spam (It's a Ham)</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
